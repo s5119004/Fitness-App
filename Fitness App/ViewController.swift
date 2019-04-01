@@ -15,13 +15,13 @@ class ViewController: UIViewController {
         locationManager.delegate = self
         locationManager.startUpdatingLocation()
 
-        let  = CLLocationCoordinate2D(latitude: 51.490929, longitude: -0.127715)
-        let  = CLLocationCoordinate2D(latitude: 51.508804, longitude: -0.127544)
-        let  = CLLocationCoordinate2D(latitude: 51.507487, longitude: -0.099561)
-        let  = CLLocationCoordinate2D(latitude: 51.49069, longitude: -0.158916)
-        let  = CLLocationCoordinate2D(latitude: 51.496696, longitude: -0.17243)
+        let BournemouthPier = CLLocationCoordinate2D(latitude: 50.713792, longitude: -1.874537)
+        let BoscombePier = CLLocationCoordinate2D(latitude: 50.718349, longitude: -1.842870)
+        let RedArrowsMemorial = CLLocationCoordinate2D(latitude: 50.717936, longitude: -1.866509)
+        let BournemouthLowerGarderns = CLLocationCoordinate2D(latitude: 50.718710, longitude: -1.877140)
+        let bournemouthCentreGardens = CLLocationCoordinate2D(latitude: 50.723903, longitude: -1.888981)
         
-        let TateBritainMuseumAnnotation = CustomAnnotation(coordinate: TateBritainMuseumCoordinate, title: "")
+        let TateBritainMuseumAnnotation = CustomAnnotation(coordinate: TateBritainMuseumCoordinate, title: "BournemouthPier")
         let TheNationalGalleryAnnotation = CustomAnnotation(coordinate: TheNationalGalleryCoordinate, title: "")
         let TateModernMuseumAnnotation = CustomAnnotation(coordinate: TateModernMuseumCoordinate, title: "")
         let SaatchiGalleryAnnotation = CustomAnnotation(coordinate: SaatchiGalleryCoordinate, title: "")
