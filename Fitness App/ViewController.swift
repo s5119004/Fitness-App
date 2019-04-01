@@ -18,9 +18,9 @@ class ViewController: UIViewController {
         locationManager.delegate = self
         locationManager.startUpdatingLocation()
 
-<<<<<<< HEAD
+
         
-=======
+
         let locationOneCoordinate = CLLocationCoordinate2D(latitude: 50.713792, longitude: -1.874537)
         let locationTwoCoordinate = CLLocationCoordinate2D(latitude: 50.718349, longitude: -1.842870)
         let locationThreeCoordinate = CLLocationCoordinate2D(latitude: 50.717936, longitude: -1.866509)
@@ -32,7 +32,7 @@ class ViewController: UIViewController {
         let locationThreeAnnotation = CustomAnnotation(coordinate: locationThreeCoordinate, title: "locationThree")
         let locationFourAnnotation = CustomAnnotation(coordinate: locationFourCoordinate, title: "locationFour")
         let locationFiveAnnotation = CustomAnnotation(coordinate: locationFiveCoordinate, title: "locationFive")
->>>>>>> 032dcbd2068c397da631272e553edbde6d5f2182
+
         
         MapView.addAnnotations([locationOneAnnotation, locationTwoAnnotation, locationThreeAnnotation,locationFourAnnotation,locationFiveAnnotation])
         
