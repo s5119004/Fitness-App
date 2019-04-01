@@ -2,19 +2,21 @@ import UIKit
 import MapKit
 
 class ViewController: UIViewController {
+    
+    let locationManager=CLLocationManager()
 
     @IBOutlet weak var MapView: MKMapView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let locationManager=CLLocationManager()
-        
         
         locationManager.requestAlwaysAuthorization()
         locationManager.delegate = self
         locationManager.startUpdatingLocation()
 
+        
+        
         
     }
 
