@@ -5,10 +5,13 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let locationManager=CLLocationManager()
+        
 
     }
-// hello everyone
+
 
 }
 
-// hi
+
