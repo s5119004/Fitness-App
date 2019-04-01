@@ -10,6 +10,7 @@ class ViewController: UIViewController {
         
         let locationManager=CLLocationManager()
         
+       
         
         locationManager.requestAlwaysAuthorization()
         locationManager.delegate = self
