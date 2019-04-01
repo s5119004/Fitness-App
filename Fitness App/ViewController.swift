@@ -9,23 +9,30 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
+        MapView.delegate = self
+        MapView.showAnnotation(MapView.annotations, animated, false)
+       
         
         locationManager.requestAlwaysAuthorization()
         locationManager.delegate = self
         locationManager.startUpdatingLocation()
 
-        let BournemouthPier = CLLocationCoordinate2D(latitude: 50.713792, longitude: -1.874537)
-        let BoscombePier = CLLocationCoordinate2D(latitude: 50.718349, longitude: -1.842870)
-        let RedArrowsMemorial = CLLocationCoordinate2D(latitude: 50.717936, longitude: -1.866509)
-        let BournemouthLowerGarderns = CLLocationCoordinate2D(latitude: 50.718710, longitude: -1.877140)
-        let bournemouthCentreGardens = CLLocationCoordinate2D(latitude: 50.723903, longitude: -1.888981)
+<<<<<<< HEAD
         
-        let TateBritainMuseumAnnotation = CustomAnnotation(coordinate: TateBritainMuseumCoordinate, title: "BournemouthPier")
-        let TheNationalGalleryAnnotation = CustomAnnotation(coordinate: TheNationalGalleryCoordinate, title: "")
-        let TateModernMuseumAnnotation = CustomAnnotation(coordinate: TateModernMuseumCoordinate, title: "")
-        let SaatchiGalleryAnnotation = CustomAnnotation(coordinate: SaatchiGalleryCoordinate, title: "")
-        let VictoriaAndAlbertMuseumAnnotation = CustomAnnotation(coordinate: VictoriaAndAlbertMuseumCoordinate, title: "")
+=======
+        let locationOneCoordinate = CLLocationCoordinate2D(latitude: 50.713792, longitude: -1.874537)
+        let locationTwoCoordinate = CLLocationCoordinate2D(latitude: 50.718349, longitude: -1.842870)
+        let locationThreeCoordinate = CLLocationCoordinate2D(latitude: 50.717936, longitude: -1.866509)
+        let locationFourCoordinate = CLLocationCoordinate2D(latitude: 50.718710, longitude: -1.877140)
+        let locationFiveCoordinate = CLLocationCoordinate2D(latitude: 50.723903, longitude: -1.888981)
+        
+        let locationOneAnnotation = CustomAnnotation(coordinate: locationOneCoordinate, title: "locationOne")
+        let locationTwoAnnotation = CustomAnnotation(coordinate: locationTwoCoordinate, title: "locationTwo")
+        let locationThreeAnnotation = CustomAnnotation(coordinate: locationthreeCoordinate, title: "locationThree")
+        let locationFourAnnotation = CustomAnnotation(coordinate: locationFourCoordinate, title: "locationFour")
+        let locationFiveAnnotation = CustomAnnotation(coordinate: locationFiveCoordinate, title: "locationFive")
+>>>>>>> 032dcbd2068c397da631272e553edbde6d5f2182
         
         
         
