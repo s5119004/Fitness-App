@@ -12,6 +12,7 @@
 		139EC79822522968006DD2B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 139EC79622522968006DD2B1 /* Main.storyboard */; };
 		139EC79A22522969006DD2B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 139EC79922522969006DD2B1 /* Assets.xcassets */; };
 		139EC79D22522969006DD2B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 139EC79B22522969006DD2B1 /* LaunchScreen.storyboard */; };
+		A3B86262225235E300DAC19D /* Custom Annotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B86261225235E300DAC19D /* Custom Annotation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,7 +23,7 @@
 		139EC79922522969006DD2B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		139EC79C22522969006DD2B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		139EC79E22522969006DD2B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E2F0C4B8225232DC0061CD9E /* Location.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Location.gpx; sourceTree = "<group>"; };
+		A3B86261225235E300DAC19D /* Custom Annotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Custom Annotation.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +58,7 @@
 			children = (
 				139EC79222522968006DD2B1 /* AppDelegate.swift */,
 				139EC79422522968006DD2B1 /* ViewController.swift */,
-				E2F0C4B8225232DC0061CD9E /* Location.gpx */,
+				A3B86261225235E300DAC19D /* Custom Annotation.swift */,
 				139EC79622522968006DD2B1 /* Main.storyboard */,
 				139EC79922522969006DD2B1 /* Assets.xcassets */,
 				139EC79B22522969006DD2B1 /* LaunchScreen.storyboard */,
@@ -139,6 +140,7 @@
 			files = (
 				139EC79522522968006DD2B1 /* ViewController.swift in Sources */,
 				139EC79322522968006DD2B1 /* AppDelegate.swift in Sources */,
+				A3B86262225235E300DAC19D /* Custom Annotation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
