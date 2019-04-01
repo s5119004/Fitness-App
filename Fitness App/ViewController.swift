@@ -15,6 +15,7 @@ class ViewController: UIViewController {
         locationManager.delegate = self
         locationManager.startUpdatingLocation()
 
+        
     }
 
 
