@@ -11,7 +11,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 
         MapView.delegate = self
-        MapView.showAnnotation(MapView.annotations, animated, false)
+        MapView.showAnnotations(MapView.annotations, animated, false)
        
         
         locationManager.requestAlwaysAuthorization()
