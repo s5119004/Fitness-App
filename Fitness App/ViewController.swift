@@ -23,11 +23,11 @@ class ViewController: UIViewController {
         
         let locationOneAnnotation = CustomAnnotation(coordinate: locationOneCoordinate, title: "locationOne")
         let locationTwoAnnotation = CustomAnnotation(coordinate: locationTwoCoordinate, title: "locationTwo")
-        let locationThreeAnnotation = CustomAnnotation(coordinate: locationthreeCoordinate, title: "locationThree")
+        let locationThreeAnnotation = CustomAnnotation(coordinate: locationThreeCoordinate, title: "locationThree")
         let locationFourAnnotation = CustomAnnotation(coordinate: locationFourCoordinate, title: "locationFour")
         let locationFiveAnnotation = CustomAnnotation(coordinate: locationFiveCoordinate, title: "locationFive")
         
-        
+        MapView.addAnnotations([locationOneAnnotation, locationTwoAnnotation, locationThreeAnnotation,locationFourAnnotation,locationFiveAnnotation])
         
     }
 
