@@ -8,6 +8,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        MapView.delegate = self
+        MapView.showAnnotation(MapView.annotations, animated, false)
+        
         let locationManager=CLLocationManager()
         
         
