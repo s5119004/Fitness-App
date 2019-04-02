@@ -6,8 +6,31 @@ class SecondViewController: UIViewController, UINavigationControllerDelegate, UI
         super.viewDidLoad()
     }
     
+    let image = UIImagePickerController()
+    image.delegate = self
+    
+    if UIImagePickercontroller.isSourceTypeAvailable(.camera){
+    image.sourceType = .camera
+    self.present(image, animated: true, completion: nil)
+    }else{
+    print("camera not available")
     
     
     
+    }
     
+    imagesourceType = UIImagepickerController.SourceType.photoLibrary
+    image.allowEditing = false
+    self.present(image, animated: true) {
+    }
+    
+}
+
+func imagePickerContoller(_picker:UIImagePickerController, didFinishPickingMediaWithInfo info:
+    [UIImagePickerController.InfoKey : Any]) {
+    if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
+    }else{
+        //error
+    }
+    self.dismiss(animated: true, completion: nil)
 }
