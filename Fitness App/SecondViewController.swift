@@ -1,5 +1,4 @@
 import UIKit
-import Foundation
 
 class SecondViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate{
     
@@ -13,21 +12,19 @@ class SecondViewController: UIViewController, UINavigationControllerDelegate, UI
     @IBAction func button(_ sender: UIButton) {
         let image = UIImagePickerController()
         image.delegate = self
+        
+        if UIImagePickerController.isSourceTypeAvailable(.camera){
+            image.sourceType = .camera
+            self.present(image, animated: true, completion: nil)
+        }else{
+            print("camera not available")
     }
     
     @IBAction func startButton(_ sender: UIButton) {
     }
     
-    if UIImagePickercontroller.isSourceTypeAvailable(.camera){
-    image.sourceType = .camera
-    self.present(image, animated: true, completion: nil)
-    }else{
-    print("camera not available")
-    
-    }
-    
-    imagesourceType = UIImagepickerController.SourceType.photoLibrary
-    image.allowEditing = false
+    imagesourceType = UIImagePickerController.SourceType.photoLibrary
+    image.allowsEditing = false
     self.present(image, animated: true) {
     }
     
@@ -36,6 +33,7 @@ class SecondViewController: UIViewController, UINavigationControllerDelegate, UI
 func imagePickerContoller(_picker:UIImagePickerController, didFinishPickingMediaWithInfo info:
     [UIImagePickerController.InfoKey : Any]) {
     if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
+        ImageControl.image = image
     }else{
         //error
     }
