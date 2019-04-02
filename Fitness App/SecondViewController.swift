@@ -17,14 +17,12 @@ class SecondViewController: UIViewController, UINavigationControllerDelegate, UI
     
     @IBAction func startButton(_ sender: UIButton) {
     }
-
+    
     if UIImagePickercontroller.isSourceTypeAvailable(.camera){
     image.sourceType = .camera
     self.present(image, animated: true, completion: nil)
     }else{
     print("camera not available")
-    
-    
     
     }
     
