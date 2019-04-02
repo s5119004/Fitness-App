@@ -32,6 +32,7 @@ class ViewController: UIViewController {
 
         
         MapView.addAnnotations([locationOneAnnotation, locationTwoAnnotation, locationThreeAnnotation,locationFourAnnotation,locationFiveAnnotation])
+        MapView.showAnnotations(MapView.annotations, animated: false)
         
     }
 
