@@ -19,7 +19,7 @@ class SecondViewController: UIViewController, UINavigationControllerDelegate, UI
     
     
     let image = UIImagePickerController()
-    image.delegate = self
+    imageView.delegate = self
     
     if UIImagePickercontroller.isSourceTypeAvailable(.camera){
     image.sourceType = .camera
