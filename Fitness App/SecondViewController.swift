@@ -6,6 +6,17 @@ class SecondViewController: UIViewController, UINavigationControllerDelegate, UI
         super.viewDidLoad()
     }
     
+    @IBOutlet weak var UIImageView: UIImageView!
+    
+    
+    @IBAction func button(_ sender: UIButton) {
+    }
+    
+    @IBAction func startButton(_ sender: UIButton) {
+    }
+
+    
+    
     let image = UIImagePickerController()
     image.delegate = self
     
