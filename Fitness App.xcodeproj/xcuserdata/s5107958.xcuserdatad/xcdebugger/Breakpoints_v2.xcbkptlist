@@ -17,6 +17,38 @@
             endingLineNumber = "4"
             landmarkName = "CustomAnnotation"
             landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Fitness_App.CustomAnnotation.coordinate.getter : __C.CLLocationCoordinate2D"
+                  moduleName = "Fitness App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/s5107958/Documents/GitHub/Fitness-App/Fitness%20App/Custom%20Annotation.swift"
+                  timestampString = "575898554.6449701"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "4"
+                  endingLineNumber = "4"
+                  offsetFromSymbolStart = "115">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Fitness_App.CustomAnnotation.coordinate.setter : __C.CLLocationCoordinate2D"
+                  moduleName = "Fitness App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/s5107958/Documents/GitHub/Fitness-App/Fitness%20App/Custom%20Annotation.swift"
+                  timestampString = "575898554.6468199"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "4"
+                  endingLineNumber = "4"
+                  offsetFromSymbolStart = "135">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
