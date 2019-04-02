@@ -9,6 +9,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        MapView.userTrackingMode = .follow
 
         MapView.showAnnotations(MapView.annotations, animated: false)
        
