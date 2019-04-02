@@ -11,16 +11,13 @@ class SecondViewController: UIViewController, UINavigationControllerDelegate, UI
     
     
     @IBAction func button(_ sender: UIButton) {
+        let image = UIImagePickerController()
+        image.delegate = self
     }
     
     @IBAction func startButton(_ sender: UIButton) {
     }
 
-    
-    
-    let image = UIImagePickerController()
-    image.delegate = self
-    
     if UIImagePickercontroller.isSourceTypeAvailable(.camera){
     image.sourceType = .camera
     self.present(image, animated: true, completion: nil)
