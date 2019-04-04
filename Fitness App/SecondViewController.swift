@@ -20,22 +20,22 @@ class SecondViewController: UIViewController, UINavigationControllerDelegate, UI
             print("camera not available")
     }
     
-    @IBAction func startButton(_ sender: UIButton) {
+    //@IBAction func startButton(_ sender: UIButton) {
     }
     
-    imagesourceType = UIImagePickerController.SourceType.photoLibrary
-    image.allowsEditing = false
-    self.present(image, animated: true) {
+    //imagesourceType = UIImagePickerController.SourceType.photoLibrary
+    //image.allowsEditing = false
+    //self.present(image, animated: true) {
     }
     
-}
+//}
 
-func imagePickerContoller(_picker:UIImagePickerController, didFinishPickingMediaWithInfo info:
-    [UIImagePickerController.InfoKey : Any]) {
-    if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
-        ImageControl.image = image
-    }else{
+//func imagePickerContoller(_picker:UIImagePickerController, didFinishPickingMediaWithInfo info:
+    //[UIImagePickerController.InfoKey : Any]) {
+    //if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
+      //  ImageControl.image = image
+   // }else{
         //error
-    }
-    self.dismiss(animated: true, completion: nil)
-}
+   // }
+    //self.dismiss(animated: true, completion: nil)
+//}
