@@ -24,8 +24,8 @@ class MapViewController: UIViewController {
     let coordinates = getRandomCoordinates(from: location, itemCount: 3)
     
     for coordinates in coordinates {
-    let title = "Distance: \(getDistance(from: location, to: coordinate))k"
-        let annotationOne = CustomAnnotation(coordinate: coordinate, title: title)
+        let title = "Distance: \(getDistance(from: location, to: coordinates))k"
+        let annotationOne = CustomAnnotation(coordinate: coordinates, title: title)
         MapView.addAnnotation(annotationOne)
         MapView.showAnnotations(MapView.annotations, animated: false)
     }
