@@ -26,7 +26,7 @@ class MapViewController: UIViewController {
 
 }
 
-extension ViewController: CLLocationManagerDelegate{
+extension MapViewController: CLLocationManagerDelegate{
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         print(locations.last!)
     }
