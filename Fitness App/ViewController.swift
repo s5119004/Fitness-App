@@ -53,19 +53,25 @@ class MapViewController: UIViewController {
         var items = [CLLocationCoordinate2D]()
         for _ in 0..<itemCount{
     
-    
-
+            let randomLat = baseLatitude + randomCoordinate()
+            let randomLong = baseLongitude + randomCoordinate()
+            let location = CLLocationCoordinate2D(latitude: randomLat, longitude: randomLong)
+            
+            items.append(location)
+            
+        }
         
-        
-        
-    
+        return items
+ }
 
-
-
+}
 
 extension MapViewController: CLLocationManagerDelegate{
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        print(locations.last!)
+        if !hasPutPoints {
+          generatePoints(from: locations.last!)
+            hasPutPoints = true
+        }
     }
 }
 
