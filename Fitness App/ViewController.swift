@@ -1,10 +1,12 @@
 import UIKit
 import MapKit
 
-class ViewController: UIViewController {
+class MapViewController: UIViewController {
     
     let locationManager=CLLocationManager()
 
+    var hasPutPoints = false
+    
     @IBOutlet weak var MapView: MKMapView!
     
     override func viewDidLoad() {
