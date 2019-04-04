@@ -19,7 +19,7 @@ class MapViewController: UIViewController {
         
     }
     
-    func generatePoints(from location: CLLocation)
+    func generatePoints(from location: CLLocation) {
         
     let coordinates = getRandomCoordinates(from: location, itemCount: 3)
     
