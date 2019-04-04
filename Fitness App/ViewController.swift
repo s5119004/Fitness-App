@@ -47,7 +47,7 @@ class MapViewController: UIViewController {
         
     }
         let baseLatitude = getBase(number: location.coordinate.latitude - 0.007)
-        
+        // longitude is a little higher since I am not on equator, you can adjust or make dynamic
         let baseLongitude = getBase(number: location.coordinate.longitude - 0.008)
         
         var items = [CLLocationCoordinate2D]()
