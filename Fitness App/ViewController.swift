@@ -34,17 +34,34 @@ class MapViewController: UIViewController {
      let coordinateLocation = CLLocation(latitude: to.latitude, longitude: to.longitude)
      return from.distance(from: coordinateLocation)/1000
     }
-    
-    
-    
 
-        
-        
+
+    func getRandomCoordinates(from location: CLLocation, itemCount: Int) -> [CLLocationCoordinate2D] {
+    
+        func getBase(number: Double) -> Double {
+             return round(number * 1000)/1000
+        }
+           
+    func randomCoordinate() -> Double{
+        return Double(arc4random_uniform(140)) * 0.0001
         
     }
+        let baseLatitude = getBase(number: location.coordinate.latitude - 0.007)
+        
+        let baseLongitude = getBase(number: location.coordinate.longitude - 0.008)
+        
+        var items = [CLLocationCoordinate2D]()
+        for _ in 0..<itemCount{
+    
+    
+
+        
+        
+        
+    
 
 
-}
+
 
 extension MapViewController: CLLocationManagerDelegate{
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
