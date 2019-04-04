@@ -11,10 +11,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         MapView.userTrackingMode = .follow
-
-       
-       
-        
         locationManager.requestAlwaysAuthorization()
         locationManager.delegate = self
         locationManager.startUpdatingLocation()
