@@ -33,10 +33,6 @@
                                 <rect key="frame" x="164" y="430" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="Button:" destination="fVF-Hy-Xhm" eventType="touchUpInside" id="iI1-I3-h9e"/>
-                                    <action selector="startButton:" destination="fVF-Hy-Xhm" eventType="touchUpInside" id="vJs-hY-Ycp"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -72,9 +68,6 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <connections>
-                        <outlet property="MapView" destination="aDe-dq-tj4" id="p5K-r3-cRN"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
