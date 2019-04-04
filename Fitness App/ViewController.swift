@@ -12,7 +12,7 @@ class ViewController: UIViewController {
         
         MapView.userTrackingMode = .follow
 
-        MapView.showAnnotations(MapView.annotations, animated: false)
+       
        
         
         locationManager.requestAlwaysAuthorization()
