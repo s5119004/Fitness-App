@@ -3,7 +3,7 @@ import MapKit
 
 class MapViewController: UIViewController {
     
-    let locationManager=CLLocationManager()
+    let locationManager = CLLocationManager()
 
     var hasPutPoints = false
     
