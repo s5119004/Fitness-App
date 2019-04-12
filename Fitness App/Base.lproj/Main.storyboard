@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fVF-Hy-Xhm">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fVF-Hy-Xhm">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -17,10 +17,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bsn-17-rAA">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bsn-17-rAA">
                                 <rect key="frame" x="135" y="330" width="105" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="eht-Jv-Q5z"/>
+                                    <constraint firstAttribute="height" constant="30" id="qRD-Gs-llk"/>
                                 </constraints>
                                 <state key="normal" title="Take Profile Pic"/>
                                 <connections>
@@ -28,28 +28,33 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ICw-sF-Ial">
-                                <rect key="frame" x="164" y="430" width="46" height="30"/>
+                                <rect key="frame" x="170" y="430" width="34" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="Ieu-qi-hjq"/>
+                                    <constraint firstAttribute="height" constant="30" id="JEV-Cc-p3O"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="startButton:" destination="fVF-Hy-Xhm" eventType="touchUpInside" id="Pji-uV-7wU"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="8gS-6A-qPt"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="UIimageView" translatesAutoresizingMaskIntoConstraints="NO" id="oCd-8j-2cd">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="302"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Bsn-17-rAA" firstAttribute="leading" secondItem="ICw-sF-Ial" secondAttribute="leading" id="9Sd-F1-cAl"/>
-                            <constraint firstItem="oCd-8j-2cd" firstAttribute="leading" secondItem="bUf-jg-P3R" secondAttribute="leading" id="EuF-er-pxO"/>
-                            <constraint firstItem="Bsn-17-rAA" firstAttribute="trailing" secondItem="ICw-sF-Ial" secondAttribute="trailing" id="K7Z-rp-Ude"/>
-                            <constraint firstItem="Bsn-17-rAA" firstAttribute="leading" secondItem="vF0-cM-qGv" secondAttribute="leading" constant="164" id="SFR-lg-E4z"/>
-                            <constraint firstItem="Bsn-17-rAA" firstAttribute="centerX" secondItem="bUf-jg-P3R" secondAttribute="centerX" id="Te9-QV-TVS"/>
-                            <constraint firstItem="oCd-8j-2cd" firstAttribute="top" secondItem="bUf-jg-P3R" secondAttribute="top" id="Xou-xP-CbB"/>
-                            <constraint firstItem="Bsn-17-rAA" firstAttribute="top" secondItem="oCd-8j-2cd" secondAttribute="bottom" constant="28" id="gQI-kV-lGi"/>
-                            <constraint firstItem="oCd-8j-2cd" firstAttribute="centerX" secondItem="Bsn-17-rAA" secondAttribute="centerX" id="mDx-e7-baY"/>
-                            <constraint firstItem="vF0-cM-qGv" firstAttribute="bottom" secondItem="ICw-sF-Ial" secondAttribute="bottom" constant="207" id="qRv-wa-e1L"/>
-                            <constraint firstItem="ICw-sF-Ial" firstAttribute="top" secondItem="Bsn-17-rAA" secondAttribute="bottom" constant="70" id="z46-0r-t4x"/>
+                            <constraint firstAttribute="trailing" secondItem="oCd-8j-2cd" secondAttribute="trailing" id="0a2-Zb-wMf"/>
+                            <constraint firstItem="oCd-8j-2cd" firstAttribute="centerX" secondItem="Bsn-17-rAA" secondAttribute="centerX" id="3DU-Fw-6Nm"/>
+                            <constraint firstItem="ICw-sF-Ial" firstAttribute="top" secondItem="Bsn-17-rAA" secondAttribute="bottom" constant="70" id="Koa-nz-OTo"/>
+                            <constraint firstItem="oCd-8j-2cd" firstAttribute="leading" secondItem="bUf-jg-P3R" secondAttribute="leading" id="MRH-G2-dHw"/>
+                            <constraint firstItem="vF0-cM-qGv" firstAttribute="bottom" secondItem="ICw-sF-Ial" secondAttribute="bottom" constant="207" id="Ose-Hz-Ab5"/>
+                            <constraint firstItem="oCd-8j-2cd" firstAttribute="top" secondItem="bUf-jg-P3R" secondAttribute="top" id="ayd-oA-0FI"/>
+                            <constraint firstItem="Bsn-17-rAA" firstAttribute="top" secondItem="oCd-8j-2cd" secondAttribute="bottom" constant="28" id="cIY-8a-Vj8"/>
+                            <constraint firstItem="ICw-sF-Ial" firstAttribute="leading" secondItem="vF0-cM-qGv" secondAttribute="leading" constant="170" id="cJi-20-IGg"/>
+                            <constraint firstItem="Bsn-17-rAA" firstAttribute="centerX" secondItem="ICw-sF-Ial" secondAttribute="centerX" id="kWp-uH-4Qs"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="vF0-cM-qGv"/>
                     </view>
@@ -95,4 +100,7 @@
     <resources>
         <image name="UIimageView" width="16" height="16"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="8gS-6A-qPt"/>
+    </inferredMetricsTieBreakers>
 </document>
