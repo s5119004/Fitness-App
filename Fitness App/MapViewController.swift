@@ -7,11 +7,17 @@ class MapViewController: UIViewController {
 
     var hasPutPoints = false
     
+    //@IBAction func BackButton(_ sender: UIBarButtonItem){
+      // dismiss(animated:true, completion: nil)
+       // func setCustomBackImage(){
+        //navigationItem.backBarButtonItem = UIBarButtonItem(title: "Back", style: .plain, target: nil, action: nil)
+      //  }
+   // }
     @IBOutlet weak var MapView: MKMapView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+    
         MapView.userTrackingMode = .follow
         locationManager.requestAlwaysAuthorization()
         locationManager.delegate = self

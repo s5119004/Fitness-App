@@ -82,7 +82,8 @@
                                     <navigationItem id="PYT-xX-4Ug">
                                         <barButtonItem key="leftBarButtonItem" title="Back" id="Vhx-y9-k3B">
                                             <connections>
-                                                <action selector="BackButton:" destination="BYZ-38-t0r" id="6hS-Of-Iem"/>
+                                                <action selector="BackButton:" destination="BYZ-38-t0r" id="vBp-6U-Dre"/>
+                                                <segue destination="fVF-Hy-Xhm" kind="showDetail" id="rBy-RC-heX"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -104,10 +105,7 @@
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="BackButton" destination="Vhx-y9-k3B" id="Amk-xX-cHc"/>
-                        <outlet property="Bar" destination="VIc-su-xfR" id="2mt-w5-aAh"/>
                         <outlet property="MapView" destination="nXG-Me-8zX" id="o1i-17-kud"/>
-                        <outlet property="bar" destination="VIc-su-xfR" id="SQt-ze-TYe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
