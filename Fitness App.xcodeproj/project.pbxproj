@@ -14,6 +14,7 @@
 		139EC79D22522969006DD2B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 139EC79B22522969006DD2B1 /* LaunchScreen.storyboard */; };
 		38E4181622538E210031C5C1 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E4181522538E210031C5C1 /* SecondViewController.swift */; };
 		A3B86262225235E300DAC19D /* CustomAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B86261225235E300DAC19D /* CustomAnnotation.swift */; };
+		E2407207227277C20085E4A1 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2407206227277C20085E4A1 /* ThirdViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		139EC79E22522969006DD2B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		38E4181522538E210031C5C1 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		A3B86261225235E300DAC19D /* CustomAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAnnotation.swift; sourceTree = "<group>"; };
+		E2407206227277C20085E4A1 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		E2F1DD4B2253863E004FFD24 /* Location.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Location.gpx; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -62,6 +64,7 @@
 				139EC79222522968006DD2B1 /* AppDelegate.swift */,
 				139EC79422522968006DD2B1 /* MapViewController.swift */,
 				38E4181522538E210031C5C1 /* SecondViewController.swift */,
+				E2407206227277C20085E4A1 /* ThirdViewController.swift */,
 				E2F1DD4B2253863E004FFD24 /* Location.gpx */,
 				A3B86261225235E300DAC19D /* CustomAnnotation.swift */,
 				139EC79622522968006DD2B1 /* Main.storyboard */,
@@ -145,6 +148,7 @@
 			files = (
 				139EC79522522968006DD2B1 /* MapViewController.swift in Sources */,
 				139EC79322522968006DD2B1 /* AppDelegate.swift in Sources */,
+				E2407207227277C20085E4A1 /* ThirdViewController.swift in Sources */,
 				38E4181622538E210031C5C1 /* SecondViewController.swift in Sources */,
 				A3B86262225235E300DAC19D /* CustomAnnotation.swift in Sources */,
 			);
