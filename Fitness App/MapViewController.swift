@@ -25,6 +25,16 @@ class MapViewController: UIViewController {
         
     }
     
+    func save(location: CLLocation){
+        let ref = Firestore().collection("locations").document("Fitness")
+        let geoPoint = geoPoint(latitude: location.coordinate.latitude, longitude:
+        location.coordinate.longitude)
+        ref.setData(["location":geoPoint])
+
+        
+    }
+    
+    
     func generatePoints(from location: CLLocation) {
         
     let coordinates = getRandomCoordinates(from: location, itemCount: 3)
