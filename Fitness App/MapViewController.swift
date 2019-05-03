@@ -1,5 +1,6 @@
 import UIKit
 import MapKit
+import Firebase
 
 class MapViewController: UIViewController {
     
@@ -24,6 +25,16 @@ class MapViewController: UIViewController {
         locationManager.startUpdatingLocation()
         
     }
+    
+    func save(location: CLLocation){
+        let ref = Firestore().collection("locations").document("Fitness")
+        let geoPoint = GeoPoint(latitude: location.coordinate.latitude, longitude:
+        location.coordinate.longitude)
+        ref.setData(["location":geoPoint])
+
+        
+    }
+    
     
     func generatePoints(from location: CLLocation) {
         
